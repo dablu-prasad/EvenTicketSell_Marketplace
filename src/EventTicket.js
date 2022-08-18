@@ -1,4 +1,3 @@
-
 import NFT from './components/templates/artifacts/contracts/NFT.sol/NFT.json'
 import { ethers } from 'ethers';
 import {useState} from 'react';
@@ -14,7 +13,6 @@ import {nftaddress} from './components/templates/config.js'
 import My_Digital_Asset from './components/templates/My_Digital_Asset';
 import Create_DashBoard from './components/templates/Create_DashBoard';
 import Index_Home from './components/templates/Index_Home';
-import HomePage from './HomePage';
  function App() {
   
  // const [name,setname]=useState();
@@ -43,7 +41,7 @@ import HomePage from './HomePage';
       //setbalance(balance.toString())
     }
     
-   // getAddress();
+    getAddress();
   
   return (
     <>
@@ -56,7 +54,6 @@ import HomePage from './HomePage';
           <Route exact path="/sell_digital_asset" element={<Sell_Digital_Asset/>} />
           <Route exact path="/my_digital_asset" element={<My_Digital_Asset/>} />
           <Route exact path="/create_dashboard" element={<Create_DashBoard/>} />
-          {/* <Route exact path="/walletconnect" element={<HomePage/>} /> */}
         </Routes>
       </div>
     </Router>

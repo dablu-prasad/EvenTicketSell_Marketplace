@@ -57,7 +57,8 @@ function My_Digital_Asset() {
 //  if (loadingState === 'loaded' && !nfts.length) return (<h1 className="py-10 px-20 text-3xl">No assets owned</h1>)
   return (
     <div className="flex justify-center">
-    <Home/>
+    {/* <Home/> */}
+    <h1>List of my purchased Ticket</h1>
       <div className="p-4">
       <div  className="card" style={{width: 18+'rem'}}>
           {

@@ -9,6 +9,7 @@ import Home from "./Home"
 
 // import { NFTStorage, File } from 'nft.storage'
 import { NFTStorage } from "nft.storage/dist/bundle.esm.min.js";
+import My_Digital_Asset from './My_Digital_Asset';
 
 const API_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweENkZTI1YzM5YjFDNjA0NmVmM2Q5M0E5MjIwNTc3QjI2NDIzRkIzNTIiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY2MDY1MjMyNDUzNywibmFtZSI6Ik5GVCAyLjAifQ.H-k_ZgK5lKdqsCR4s7kAk7W9A-eRNmFliZLLL4ISexY'
 
@@ -92,7 +93,7 @@ export default function CreateItem() {
       }
   return (
     <div>
-    <Home/>
+    {/* <Home/> */}
 <div className="mb-3">
 <label  className="form-label">Event Name:</label>
 <input className="form-control" id="i1" onChange={e => updateFormInput({ ...formInput, name: e.target.value })} />
@@ -121,6 +122,8 @@ export default function CreateItem() {
 									</div>
 </div>
 <button onClick={createMarket} className="btn btn-primary" >Mint Item</button>
+<br/>
+<My_Digital_Asset/>
     </div>
   )
 }

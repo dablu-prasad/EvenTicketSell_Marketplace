@@ -59,9 +59,9 @@ export default function Create_DashBoard() {
   return (
       
     <div>
-    <Home/>
+    {/* <Home/> */}
       <div className="p-4">
-        <h2 className="text-2xl py-2">Items Created</h2>
+        <h2 className="text-2xl py-2">Events Created</h2>
           <div  className="card" style={{width: 18+'rem'}}>
           {
             nfts.map((nft, i) => (
@@ -79,7 +79,7 @@ export default function Create_DashBoard() {
         {
           Boolean(sold.length) && (
             <div>
-              <h2 className="text-2xl py-2">Items sold</h2>
+              <h2 className="text-2xl py-2">Events Ticket sold</h2>
               <div  className="card" style={{width: 18+'rem'}}>
                 {
                   sold.map((nft, i) => (

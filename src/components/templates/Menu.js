@@ -6,6 +6,7 @@ const navigate=useNavigate();
     const navMyAsset=()=>{navigate('/my_digital_asset')}
     const navdashboard=()=>{navigate('/create_dashboard')}
     const navHome=()=>{navigate('/')}
+    const navconnect=()=>{navigate('/walletconnect')}
     return(
       <div className='App'>
 <div className="d-flex justify-content-center padding-top">
@@ -15,14 +16,16 @@ const navigate=useNavigate();
 <button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navSellAsset}>
   Create Event
 </button>
-<button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navMyAsset}>
+{/* <button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navMyAsset}>
   My Event Ticket
-</button>
-{/* <button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navdashboard}>
-  Create DashBoard
 </button> */}
+<button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navdashboard}>
+  Events DashBoard
+</button>
 </div>
+
 </div>
+
     )
     
 }

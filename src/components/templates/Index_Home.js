@@ -3,11 +3,10 @@ import { ethers } from 'ethers'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Web3Modal from "web3modal"
-
 import {
   nftaddress, nftmarketaddress
 } from './config'
-
+import "../Index_Home.css"
 import NFT from './artifacts/contracts/NFT.sol/NFT.json'
 import Market from './artifacts/contracts/NFTMarket.sol/NFTMarket.json'
 
@@ -75,9 +74,9 @@ function Index_Home() {
   }
   if (loadingState === 'loaded' && !nfts.length) return (<h1 className="px-20 py-10 text-3xl">No items in marketplace</h1>)
   return (
-    <div className="card">
-      <div className="px-4" style={{ maxWidth: '1600px' }}>
-      <div  className="card" style={{width: 18+'rem'}}>
+    <div className="cards">
+      <div className="px-4" style={{ maxWidth: '1600px' }}> 
+       <div  className="cards" style={{width: 18+'rem'}}>
           {
             nfts.map((nft, i) => (
               <div key={i} className="border shadow rounded-xl overflow-hidden">
@@ -96,8 +95,8 @@ function Index_Home() {
               </div>
             ))
           }
-        </div>
-      </div>
+        </div> 
+     </div>
     </div>
   )
 }
