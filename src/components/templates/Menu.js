@@ -10,18 +10,19 @@ const navigate=useNavigate();
     return(
       <div className='App'>
 <div className="d-flex justify-content-center padding-top">
-<button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navHome}>
-  Event Marketplace
-</button>
+
 <button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navSellAsset}>
   Create Event
+</button>
+<button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navHome}>
+  Events DashBoard
 </button>
 {/* <button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navMyAsset}>
   My Event Ticket
 </button> */}
-<button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navdashboard}>
+{/* <button type="button" className="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top" onClick={navdashboard}>
   Events DashBoard
-</button>
+</button> */}
 </div>
 
 </div>

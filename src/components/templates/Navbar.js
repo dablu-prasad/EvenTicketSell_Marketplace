@@ -15,7 +15,12 @@ const Navbar=()=>{
 
       setaccount(account)
       //setbalance(balance.toString())
+      disableBtn()
     }
+
+    function disableBtn() {
+      document.getElementById('btn').style.visibility = 'hidden';
+  }
 
   return(
       <div>
@@ -24,7 +29,7 @@ const Navbar=()=>{
      <a className="navbar-brand">Event Ticket Sell</a>
 <div>
 
-    <button class="btn btn-primary" onClick={getAddress}>
+    <button class="btn btn-primary" id="btn" onClick={getAddress}>
     Connect Wallet
   </button>   
    
